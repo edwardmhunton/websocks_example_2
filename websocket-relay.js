@@ -19,7 +19,7 @@ if (process.argv.length < 3) {
 var STREAM_SECRET = process.argv[2],
 	STREAM_PORT = process.argv[3] || 8081,
 	WEBSOCKET_PORT = process.argv[4] || 8082,
-	RECORD_STREAM = false;
+	RECORD_STREAM = true;
 
 // Websocket Server
 var socketServer = new WebSocket.Server({port: WEBSOCKET_PORT, perMessageDeflate: false});
